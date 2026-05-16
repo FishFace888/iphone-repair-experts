@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Identity System | V2.0</title>
+    <style>
+        :root {
+            --bg-primary: #050505;
+            --bg-secondary: #0D0D0E;
+            --accent-cyan: #00D1FF;
+            --text-primary: #FFFFFF;
+            --text-secondary: #A1A1AA;
+            --border-color: #1C1C1E;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Ambient Glow Backgrounds */
+        .glow-top {
+            position: fixed;
+            top: -150px;
+            right: -150px;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(0, 209, 255, 0.07) 0%, rgba(0, 0, 0, 0) 70%);
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 80px 24px;
+        }
+
+        /* Hero Section */
+        header {
+            margin-bottom: 120px;
+        }
+
+        .logo-icon {
+            margin-bottom: 32px;
+        }
+
+        h1 {
+            font-size: clamp(3rem, 8vw, 5rem);
+            font-weight: 800;
+            letter-spacing: -0.05em;
+            line-height: 0.9;
+            text-transform: uppercase;
+        }
+
+        .cyan-text { color: var(--accent-cyan); }
+
+        .subtitle {
+            margin-top: 24px;
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        /* Grid Sections */
+        section {
+            margin-bottom: 100px;
+        }
+
+        .section-label {
+            display: flex;
+            align-items: center;
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            margin-bottom: 48px;
+        }
+
+        .section-label span {
+            color: var(--accent-cyan);
+            margin-right: 12px;
+        }
+
+        /* Cards & Swatches */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+        }
+
+        .card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 32px;
+        }
+
+        .swatch {
+            height: 100px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        code {
+            font-family: 'JetBrains Mono', monospace;
+            background: rgba(255,255,255,0.05);
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+
+        /* Typography Samples */
+        .type-h {
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: -0.04em;
+            margin-bottom: 16px;
+        }
+
+        .type-p {
+            color: var(--text-secondary);
+            max-width: 500px;
+        }
+
+        /* UI Components */
+        .btn-primary {
+            display: inline-block;
+            background: var(--accent-cyan);
+            color: #000;
+            padding: 16px 32px;
+            border-radius: 100px;
+            font-weight: 700;
+            text-decoration: none;
+            box-shadow: 0 10px 30px rgba(0, 209, 255, 0.2);
+            transition: transform 0.2s ease;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+        }
+
+        .btn-ghost {
+            display: inline-block;
+            border: 1px solid var(--border-color);
+            color: #FFF;
+            padding: 16px 32px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 500;
+            margin-left: 16px;
+        }
+
+        .status-dot {
+            width: 10px;
+            height: 10px;
+            background: var(--accent-cyan);
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 10px;
+            box-shadow: 0 0 12px var(--accent-cyan);
+        }
+
+        footer {
+            border-top: 1px solid var(--border-color);
+            padding: 40px 0;
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="glow-top"></div>
+
+    <div class="container">
+        <header>
+            <div class="logo-icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                    <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" stroke="#00D1FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <h1>Brand<br><span class="cyan-text">Guidelines</span><br>V2.0</h1>
+            <p class="subtitle">Personal Identity System & UI Framework</p>
+        </header>
+
+        <section>
+            <div class="section-label"><span>//</span> 01 Color System</div>
+            <div class="grid">
+                <div class="card">
+                    <div class="swatch" style="background: #00D1FF;"></div>
+                    <h3>Electric Cyan</h3>
+                    <p style="margin-top:8px;"><code>#00D1FF</code></p>
+                </div>
+                <div class="card" style="background: #050505;">
+                    <div class="swatch" style="background: #050505; border-color: #27272A;"></div>
+                    <h3>Eerie Black</h3>
+                    <p style="margin-top:8px;"><code>#050505</code></p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-label"><span>//</span> 02 Typography</div>
+            <div class="card">
+                <div class="type-h">High Authority Heading</div>
+                <p class="type-p">Font: Inter Extra Bold. Letter spacing is reduced to -0.05em to create a dense, modern tech aesthetic. All headings use this treatment.</p>
+                <div style="margin-top: 40px; border-top: 1px solid var(--border-color); padding-top: 20px;">
+                    <span class="status-dot"></span> <span style="font-size: 0.8rem; letter-spacing: 0.1em; color: var(--text-secondary);">CAPTION TREATMENT</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-label"><span>//</span> 03 Components</div>
+            <div class="card">
+                <div style="margin-bottom: 40px;">
+                    <a href="#" class="btn-primary">Work with Me</a>
+                    <a href="#" class="btn-ghost">Read Story &rarr;</a>
+                </div>
+                <p class="type-p">Buttons use a 100px radius for high-action items and a 12px radius for secondary ghost buttons.</p>
+            </div>
+        </section>
+
+        <footer>
+            &copy; 2026 IDENTITY SYSTEM • BUILT FOR HIGH-CONVERSION PERSONAL BRANDS
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>iPhone Repair Maidstone — Fixed Today at Your Door | iPhone Fixer</title>
+<meta name="description" content="Expert iPhone repair in Maidstone. We come to you — same day service, no fix no fee, free call-out. Screens from £49, batteries from £39. Call or WhatsApp now."/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+<style>
+:root{--ocean:#0099CC;--mint:#00C9A7;--deep:#0C3547;--deep2:#0A2535;--mint-light:#E8F8F5;--ocean-light:#E0F4FB;--off-white:#F7FAFB;--near-black:#0D2233;--mid:#4A6A7A;--border:#C8E8F0;}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'Poppins',sans-serif;background:white;color:var(--near-black);overflow-x:hidden;width:100%;padding-bottom:60px;}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:100;background:rgba(12,53,71,0.97);backdrop-filter:blur(12px);border-bottom:2px solid var(--mint);padding:0 24px;height:60px;}
+.nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:100%;}
+.nav-logo{display:flex;align-items:baseline;gap:2px;text-decoration:none;}
+.nav-logo span:first-child{font-size:18px;font-weight:300;color:white;}
+.nav-logo span:last-child{font-size:18px;font-weight:700;color:var(--mint);}
+.nav-cta{background:var(--mint);color:var(--deep);font-weight:700;font-size:12px;padding:8px 16px;border-radius:50px;border:none;cursor:pointer;font-family:'Poppins',sans-serif;text-decoration:none;white-space:nowrap;}
+
+/* HERO */
+#hero{background:var(--deep);padding:64px 24px 72px;position:relative;overflow:hidden;}
+.hero-dots{position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(circle,rgba(255,255,255,0.06) 1px,transparent 1px);background-size:28px 28px;}
+.hero-inner{max-width:900px;margin:0 auto;position:relative;z-index:1;text-align:center;}
+.hero-location-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(0,201,167,0.15);border:1px solid rgba(0,201,167,0.3);color:var(--mint);font-size:10px;font-weight:700;letter-spacing:1.5px;padding:6px 14px;border-radius:50px;margin-bottom:24px;text-transform:uppercase;}
+h1{font-size:clamp(30px,5vw,56px);font-weight:300;color:white;line-height:1.15;margin-bottom:8px;}
+h1 strong{font-weight:800;color:var(--mint);display:block;}
+.hero-sub{font-size:15px;color:rgba(255,255,255,0.65);margin:18px auto 32px;line-height:1.7;max-width:580px;}
+.hero-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;}
+.btn-primary{background:var(--mint);color:var(--deep);font-weight:700;font-size:14px;padding:13px 28px;border-radius:50px;border:none;cursor:pointer;font-family:'Poppins',sans-serif;text-decoration:none;}
+.btn-secondary{background:transparent;color:white;font-weight:600;font-size:14px;padding:13px 28px;border-radius:50px;border:1.5px solid rgba(255,255,255,0.3);cursor:pointer;font-family:'Poppins',sans-serif;text-decoration:none;}
+.hero-trust{display:flex;gap:28px;margin-top:44px;justify-content:center;flex-wrap:wrap;}
+.trust-item{display:flex;flex-direction:column;align-items:center;}
+.trust-num{font-size:22px;font-weight:800;color:var(--mint);line-height:1;}
+.trust-label{font-size:9px;color:rgba(255,255,255,0.5);font-weight:500;margin-top:2px;text-transform:uppercase;letter-spacing:0.5px;}
+
+/* USP BAR */
+.usp-bar{background:var(--mint);padding:13px 24px;}
+.usp-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:center;gap:32px;flex-wrap:wrap;}
+.usp-bar span{color:var(--deep);font-size:12px;font-weight:700;display:flex;align-items:center;gap:5px;white-space:nowrap;}
+.usp-bar span::before{content:'✓';}
+
+/* SECTIONS */
+.sec{padding:64px max(24px,calc((100% - 1100px)/2));}
+.sec-label{display:inline-block;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--ocean);margin-bottom:8px;}
+.sec h2{font-size:clamp(24px,4vw,38px);font-weight:700;color:var(--near-black);line-height:1.2;}
+.sec h2 span{color:var(--ocean);}
+.sec-intro{font-size:15px;color:var(--mid);line-height:1.7;margin-top:10px;max-width:640px;}
+
+/* SERVICES */
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px;}
+.service-card{background:white;border:1px solid var(--border);border-radius:16px;padding:26px;position:relative;overflow:hidden;transition:transform 0.2s,box-shadow 0.2s;}
+.service-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:var(--mint);transform:scaleX(0);transform-origin:left;transition:transform 0.3s;}
+.service-card:hover{transform:translateY(-3px);box-shadow:0 10px 32px rgba(0,153,204,0.1);}
+.service-card:hover::after{transform:scaleX(1);}
+.service-emoji{font-size:30px;margin-bottom:12px;}
+.service-price{font-size:22px;font-weight:800;color:var(--ocean);margin-bottom:3px;}
+.service-name{font-size:15px;font-weight:700;color:var(--near-black);margin-bottom:4px;}
+.service-time{font-size:11px;color:var(--mid);font-weight:600;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:10px;}
+.service-desc{font-size:13px;color:var(--mid);line-height:1.65;}
+.service-cta{margin-top:16px;}
+.service-cta a{font-size:13px;font-weight:700;color:var(--ocean);text-decoration:none;}
+
+/* HOW */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:48px;position:relative;}
+.steps::before{content:'';position:absolute;top:26px;left:12.5%;right:12.5%;height:2px;background:linear-gradient(90deg,var(--mint),var(--ocean));}
+.step{text-align:center;padding:0 12px;}
+.step-num{width:52px;height:52px;border-radius:50%;margin:0 auto 16px;display:flex;align-items:center;justify-content:center;font-size:17px;font-weight:800;color:white;position:relative;z-index:1;}
+.step:nth-child(1) .step-num,.step:nth-child(3) .step-num{background:var(--ocean);}
+.step:nth-child(2) .step-num,.step:nth-child(4) .step-num{background:var(--mint);color:var(--deep);}
+.step h3{font-size:13px;font-weight:700;color:var(--near-black);margin-bottom:6px;}
+.step p{font-size:12px;color:var(--mid);line-height:1.6;}
+
+/* LOCAL AREA */
+#local{background:var(--mint-light);}
+.local-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:32px;}
+.local-tag{background:white;border:1px solid var(--border);border-radius:10px;padding:12px 14px;text-align:center;font-size:13px;font-weight:600;color:var(--deep);}
+
+/* REVIEWS */
+.reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:36px;}
+.review-card{background:white;border-radius:14px;padding:20px;border:1px solid var(--border);}
+.review-stars{color:#F59E0B;font-size:13px;margin-bottom:10px;}
+.review-text{font-size:13px;color:var(--mid);line-height:1.7;margin-bottom:12px;font-style:italic;}
+.review-author{font-size:12px;font-weight:700;color:var(--near-black);}
+.review-location{font-size:11px;color:var(--mid);}
+
+/* CONTACT BOX */
+.contact-box{background:white;border-radius:20px;border:1px solid var(--border);padding:36px;max-width:700px;box-shadow:0 4px 24px rgba(0,153,204,0.07);}
+.contact-trust{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px;}
+.contact-trust-item{display:flex;align-items:center;gap:6px;background:var(--off-white);border:1px solid var(--border);border-radius:50px;padding:6px 14px;font-size:12px;font-weight:600;color:var(--near-black);}
+.contact-wa-block{display:flex;align-items:center;justify-content:space-between;gap:20px;background:#f0fdf4;border:1.5px solid #86efac;border-radius:14px;padding:20px 24px;margin-bottom:24px;flex-wrap:wrap;}
+.contact-wa-title{font-size:16px;font-weight:700;color:var(--near-black);margin-bottom:4px;}
+.contact-wa-sub{font-size:13px;color:var(--mid);line-height:1.5;}
+.contact-wa-btn{display:flex;align-items:center;gap:8px;background:#25D366;color:white;font-family:'Poppins',sans-serif;font-size:14px;font-weight:700;padding:12px 24px;border-radius:50px;text-decoration:none;white-space:nowrap;flex-shrink:0;}
+.contact-divider{display:flex;align-items:center;gap:12px;margin-bottom:24px;}
+.contact-divider::before,.contact-divider::after{content:'';flex:1;height:1px;background:var(--border);}
+.contact-divider span{font-size:12px;font-weight:600;color:var(--mid);white-space:nowrap;}
+
+/* FORM */
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.fg{margin-bottom:12px;}
+.fg label{display:block;font-size:12px;font-weight:600;color:var(--mid);margin-bottom:5px;}
+.fg label .req{color:var(--ocean);}
+.fg input,.fg select,.fg textarea{width:100%;padding:11px 13px;border:1.5px solid var(--border);border-radius:9px;font-family:'Poppins',sans-serif;font-size:13px;color:var(--near-black);background:white;outline:none;transition:border-color 0.2s;appearance:none;-webkit-appearance:none;}
+.fg input::placeholder,.fg textarea::placeholder{color:#9BB5C0;}
+.fg select{color:#9BB5C0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%234A6A7A' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center;padding-right:32px;}
+.fg select.chosen{color:var(--near-black);}
+.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--ocean);box-shadow:0 0 0 3px rgba(0,153,204,0.08);}
+.fg textarea{height:80px;resize:none;}
+.cf-submit{display:block;width:100%;padding:14px;background:var(--mint);color:var(--deep);font-family:'Poppins',sans-serif;font-size:15px;font-weight:700;border:none;border-radius:50px;cursor:pointer;margin-top:4px;}
+.success-wrap{display:none;text-align:center;padding:32px 16px;}
+.success-wrap.show{display:block;}
+.si{font-size:40px;margin-bottom:12px;}
+.success-wrap h3{font-size:18px;font-weight:700;color:var(--near-black);margin-bottom:8px;}
+.success-wrap p{font-size:13px;color:var(--mid);line-height:1.7;}
+.sms-note{background:var(--mint-light);border:1px solid var(--border);border-radius:10px;padding:12px 16px;margin-top:16px;font-size:13px;color:var(--deep);font-weight:600;}
+
+/* FOOTER */
+footer{background:var(--deep2);padding:40px 24px 20px;border-top:2px solid rgba(0,201,167,0.2);}
+.footer-inner{max-width:1200px;margin:0 auto;}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;}
+.footer-bottom p{font-size:11px;color:rgba(255,255,255,0.3);}
+.footer-logo span:first-child{font-size:18px;font-weight:300;color:white;}
+.footer-logo span:last-child{font-size:18px;font-weight:700;color:var(--mint);}
+.footer-links{display:flex;gap:20px;flex-wrap:wrap;margin-top:16px;}
+.footer-links a{font-size:12px;color:rgba(255,255,255,0.45);text-decoration:none;}
+.footer-links a:hover{color:var(--mint);}
+
+/* STICKY BAR */
+.sticky-bar{position:fixed;bottom:0;left:0;right:0;z-index:400;background:var(--deep2);border-top:2px solid var(--mint);padding:10px 16px;display:flex;align-items:center;justify-content:center;box-shadow:0 -4px 24px rgba(0,0,0,0.3);}
+.sticky-bar-inner{max-width:1200px;width:100%;display:flex;align-items:center;justify-content:space-between;gap:12px;min-width:0;}
+.sticky-bar-text{color:rgba(255,255,255,0.7);font-size:13px;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1;min-width:0;}
+.sticky-bar-text strong{color:white;}
+.sticky-wa{display:flex;align-items:center;gap:8px;background:#25D366;color:white;font-family:'Poppins',sans-serif;font-size:13px;font-weight:700;padding:10px 20px;border-radius:50px;text-decoration:none;white-space:nowrap;}
+.sticky-wa svg{width:18px;height:18px;fill:white;flex-shrink:0;}
+
+/* COOKIE */
+.cookie-banner{position:fixed;bottom:60px;left:0;right:0;z-index:450;background:var(--deep2);border-top:2px solid var(--mint);padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;}
+.cookie-banner p{font-size:12px;color:rgba(255,255,255,0.7);line-height:1.5;flex:1;}
+.cookie-btn{background:var(--mint);color:var(--deep);font-family:'Poppins',sans-serif;font-size:12px;font-weight:700;padding:8px 20px;border-radius:50px;border:none;cursor:pointer;}
+.cookie-banner.hidden{display:none;}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .services-grid{grid-template-columns:1fr;}
+  .steps{grid-template-columns:repeat(2,1fr);gap:32px;}
+  .steps::before{display:none;}
+  .reviews-grid{grid-template-columns:1fr;}
+  .local-grid{grid-template-columns:repeat(2,1fr);}
+  .frow{grid-template-columns:1fr;}
+  .sticky-bar-text{display:none;}
+  .sticky-wa{width:100%;justify-content:center;border-radius:0;padding:14px;}
+}
+@media(max-width:480px){
+  .sec{padding:48px 16px;}
+  h1{font-size:32px;}
+  .hero-actions{flex-direction:column;align-items:center;}
+  .btn-primary,.btn-secondary{width:100%;text-align:center;}
+}
+</style>
+</head>
+<body>
+
+<!-- STICKY BAR -->
+<div class="sticky-bar">
+  <div class="sticky-bar-inner">
+    <div class="sticky-bar-text"><strong>iPhone repair in Maidstone?</strong> Same day service. No fix no fee.</div>
+    <a href="https://wa.me/447700000000" target="_blank" class="sticky-wa">
+      <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      WhatsApp Us
+    </a>
+  </div>
+</div>
+
+<!-- COOKIE -->
+<div class="cookie-banner" id="cookieBanner">
+  <p>We use cookies to improve your experience. By using this site you agree to our use of cookies.</p>
+  <button class="cookie-btn" onclick="acceptCookies()">Got it</button>
+</div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html"><span>iPhone</span><span>Fixer</span></a>
+    <a class="nav-cta" href="#contact">Get a Free Quote</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-dots"></div>
+  <div class="hero-inner">
+    <div class="hero-location-badge">📍 Maidstone, Kent</div>
+    <h1>iPhone Repair in Maidstone<strong>Fixed at Your Door. Today.</strong></h1>
+    <p class="hero-sub">We come to you anywhere in Maidstone and the surrounding area. Same day service, no fix no fee, free call-out. Screens from £49.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary">Get a Free Quote</a>
+      <a href="#services" class="btn-secondary">See Our Services</a>
+    </div>
+    <div class="hero-trust">
+      <div class="trust-item"><span class="trust-num">4.9★</span><span class="trust-label">Google Rating</span></div>
+      <div class="trust-item"><span class="trust-num">10+</span><span class="trust-label">Years Experience</span></div>
+      <div class="trust-item"><span class="trust-num">5,000+</span><span class="trust-label">Happy Customers</span></div>
+      <div class="trust-item"><span class="trust-num">No Fix</span><span class="trust-label">No Fee</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- USP BAR -->
+<div class="usp-bar">
+  <div class="usp-inner">
+    <span>Same Day Service</span>
+    <span>1 Year Warranty</span>
+    <span>Premium Parts</span>
+    <span>No Fix No Fee</span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services" class="sec" style="background:var(--off-white);">
+  <div class="sec-label">What we fix in Maidstone</div>
+  <h2>iPhone repair services <span>in Maidstone</span></h2>
+  <p class="sec-intro">All repairs carried out at your home or workplace in Maidstone. Premium parts, one year warranty, no fix no fee.</p>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-emoji">📱</div>
+      <div class="service-price">From £49</div>
+      <div class="service-name">Screen Replacement</div>
+      <div class="service-time">⏱ Around 30 minutes</div>
+      <p class="service-desc">Cracked or shattered screen replaced with a premium quality part at your Maidstone address. Done while you wait.</p>
+      <div class="service-cta"><a href="#contact">Get a free quote</a></div>
+    </div>
+    <div class="service-card">
+      <div class="service-emoji">🔋</div>
+      <div class="service-price">From £39</div>
+      <div class="service-name">Battery Replacement</div>
+      <div class="service-time">⏱ Around 20 minutes</div>
+      <p class="service-desc">Premium battery replacement at your door in Maidstone. No more running out of charge by midday.</p>
+      <div class="service-cta"><a href="#contact">Get a free quote</a></div>
+    </div>
+    <div class="service-card">
+      <div class="service-emoji">🔌</div>
+      <div class="service-price">From £29</div>
+      <div class="service-name">Charging Port Repair</div>
+      <div class="service-time">⏱ Around 30 minutes</div>
+      <p class="service-desc">Not charging or loose connection? We come to your Maidstone address and fix it fast.</p>
+      <div class="service-cta"><a href="#contact">Get a free quote</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how" class="sec" style="background:var(--deep);">
+  <div class="sec-label" style="color:var(--mint);">How it works</div>
+  <h2 style="color:white;">Fixed in <span style="color:var(--mint);">four simple steps</span></h2>
+  <div class="steps">
+    <div class="step"><div class="step-num">1</div><h3 style="color:white;">Tell Us the Issue</h3><p style="color:rgba(255,255,255,0.55);">Share your iPhone model, the problem and your Maidstone address. Takes two minutes.</p></div>
+    <div class="step"><div class="step-num">2</div><h3 style="color:white;">Get a Free Quote</h3><p style="color:rgba(255,255,255,0.55);">We come back to you quickly with a clear, honest price. No obligation.</p></div>
+    <div class="step"><div class="step-num">3</div><h3 style="color:white;">Agree a Time</h3><p style="color:rgba(255,255,255,0.55);">We work around your schedule. Evenings and weekends available in Maidstone.</p></div>
+    <div class="step"><div class="step-num">4</div><h3 style="color:white;">We Come To You</h3><p style="color:rgba(255,255,255,0.55);">Your technician arrives in Maidstone and repairs your phone on the spot outside your door.</p></div>
+  </div>
+</section>
+
+<!-- LOCAL AREA -->
+<section id="local" class="sec" style="background:var(--mint-light);">
+  <div class="sec-label">Maidstone coverage</div>
+  <h2>We cover <span>all of Maidstone</span></h2>
+  <p class="sec-intro">We come to you anywhere in Maidstone and the surrounding villages. Not sure if we cover your area? Just ask.</p>
+  <div class="local-grid">
+    <div class="local-tag">📍 Maidstone Town Centre</div>
+    <div class="local-tag">📍 Bearsted</div>
+    <div class="local-tag">📍 Loose</div>
+    <div class="local-tag">📍 Barming</div>
+    <div class="local-tag">📍 Allington</div>
+    <div class="local-tag">📍 Boxley</div>
+    <div class="local-tag">📍 Detling</div>
+    <div class="local-tag">📍 Surrounding areas</div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews" class="sec" style="background:white;">
+  <div class="sec-label">Customer reviews</div>
+  <h2>What Maidstone customers <span>say about us</span></h2>
+  <div class="reviews-grid">
+    <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Cracked my iPhone 15 screen on the way to work. They came to my house in Maidstone that evening and fixed it in 30 minutes. Brilliant."</p><div class="review-author">Sarah M.</div><div class="review-location">Maidstone, Kent</div></div>
+    <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Battery was dying by lunchtime every day. iPhone Fixer came to my office in Maidstone town centre and sorted it in 20 minutes. Great price too."</p><div class="review-author">Tom R.</div><div class="review-location">Maidstone, Kent</div></div>
+    <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"So easy. They came to my door in Bearsted, fixed my charging port and were done in half an hour. No need to go anywhere. Will use again."</p><div class="review-author">Claire H.</div><div class="review-location">Bearsted, Maidstone</div></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="sec" style="background:var(--off-white);">
+  <div class="sec-label">Get in touch</div>
+  <h2>iPhone repair in Maidstone — <span>get a free quote</span></h2>
+  <p class="sec-intro">Two ways to get in touch. Pick whichever suits you best.</p>
+  <div class="contact-box">
+    <div class="contact-trust">
+      <div class="contact-trust-item">📍 Serving Maidstone</div>
+      <div class="contact-trust-item">✅ No fix no fee</div>
+      <div class="contact-trust-item">⚡ Same day service</div>
+      <div class="contact-trust-item">🏆 1 year warranty</div>
+    </div>
+    <div class="contact-wa-block">
+      <div class="contact-wa-text">
+        <div class="contact-wa-title">💬 Chat on WhatsApp</div>
+        <div class="contact-wa-sub">The fastest way to get a quote for your Maidstone repair. Message us and we will come back straight away.</div>
+      </div>
+      <a href="https://wa.me/447700000000" target="_blank" class="contact-wa-btn">
+        <svg viewBox="0 0 24 24" style="width:20px;height:20px;fill:white;flex-shrink:0;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        WhatsApp Us Now
+      </a>
+    </div>
+    <div class="contact-divider"><span>or fill in the form</span></div>
+    <div id="cf-success" class="success-wrap">
+      <div class="si">✅</div>
+      <h3>Message sent!</h3>
+      <p>Thanks for getting in touch. We will come back to you shortly with your Maidstone repair quote.</p>
+      <div class="sms-note">📱 You will receive a text from us as soon as we are available to talk through your repair.</div>
+    </div>
+    <div id="cf-inner">
+      <div class="frow">
+        <div class="fg"><label>Your name <span class="req">*</span></label><input type="text" id="cf-first" placeholder="John Smith" autocomplete="name"/></div>
+        <div class="fg"><label>Phone number <span class="req">*</span></label><input type="tel" id="cf-phone" placeholder="07700 000 000" autocomplete="tel"/></div>
+      </div>
+      <div class="frow">
+        <div class="fg">
+          <label>iPhone model <span class="req">*</span></label>
+          <select id="cf-model" onchange="this.classList.add('chosen')">
+            <option value="" disabled selected>Select your model</option>
+            <option>iPhone 16 Pro Max</option><option>iPhone 16 Pro</option><option>iPhone 16</option>
+            <option>iPhone 15 Pro Max</option><option>iPhone 15 Pro</option><option>iPhone 15</option>
+            <option>iPhone 14 Pro Max</option><option>iPhone 14 Pro</option><option>iPhone 14</option>
+            <option>iPhone 13</option><option>iPhone 12</option><option>iPhone 11</option>
+            <option>iPhone XR / XS</option><option>iPhone SE</option><option>Not sure</option>
+          </select>
+        </div>
+        <div class="fg"><label>Postcode <span class="req">*</span></label><input type="text" id="cf-postcode" placeholder="ME14 1AA" autocomplete="postal-code" style="text-transform:uppercase"/></div>
+      </div>
+      <div class="fg"><label>What is wrong with your iPhone? <span class="req">*</span></label><textarea id="cf-issue" placeholder="Cracked screen, battery draining, not charging..."></textarea></div>
+      <button type="button" class="cf-submit" onclick="submitContact()">Get My Free Quote</button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo"><span>iPhone</span><span>Fixer</span></div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+      <a href="maidstone.html">Maidstone</a>
+    </div>
+    <div class="footer-bottom" style="margin-top:24px;">
+      <p>© 2025 iPhone Fixer. All rights reserved. iPhone repair Maidstone, Kent.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+function submitContact(){
+  const g=id=>document.getElementById(id).value.trim();
+  if(!g('cf-first')||!g('cf-phone')||!document.getElementById('cf-model').value||!g('cf-issue')||!g('cf-postcode')){
+    alert('Please fill in all required fields.');return;
+  }
+  document.getElementById('cf-inner').style.display='none';
+  document.getElementById('cf-success').classList.add('show');
+}
+function acceptCookies(){
+  document.getElementById('cookieBanner').classList.add('hidden');
+  localStorage.setItem('cookiesAccepted','true');
+}
+if(localStorage.getItem('cookiesAccepted')==='true'){
+  document.getElementById('cookieBanner').classList.add('hidden');
+}
+</script>
+</body>
+</html>
