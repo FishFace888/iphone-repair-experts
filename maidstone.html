@@ -16,7 +16,17 @@ nav{position:sticky;top:0;z-index:100;background:rgba(12,53,71,0.97);backdrop-fi
 .nav-logo{display:flex;align-items:baseline;gap:2px;text-decoration:none;}
 .nav-logo span:first-child{font-size:18px;font-weight:300;color:white;}
 .nav-logo span:last-child{font-size:18px;font-weight:700;color:var(--mint);}
+.nav-links{display:flex;gap:20px;list-style:none;}
+.nav-links a{color:rgba(255,255,255,0.75);font-size:13px;font-weight:500;text-decoration:none;transition:color 0.2s;white-space:nowrap;}
+.nav-links a:hover{color:var(--mint);}
 .nav-cta{background:var(--mint);color:var(--deep);font-weight:700;font-size:12px;padding:8px 16px;border-radius:50px;border:none;cursor:pointer;font-family:'Poppins',sans-serif;text-decoration:none;white-space:nowrap;}
+.nav-hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;}
+.nav-hamburger span{display:block;width:22px;height:2px;background:white;border-radius:2px;}
+.mobile-menu{display:none;position:fixed;top:60px;left:0;right:0;background:var(--deep2);border-bottom:2px solid var(--mint);z-index:99;padding:16px 24px;flex-direction:column;}
+.mobile-menu a{color:rgba(255,255,255,0.85);font-size:15px;font-weight:500;text-decoration:none;padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.08);display:block;}
+.mobile-menu .mobile-cta{background:var(--mint);color:var(--deep);font-weight:700;border-radius:10px;text-align:center;margin-top:12px;border-bottom:none;padding:14px;}
+.mobile-menu.open{display:flex;}
+@media(max-width:768px){.nav-links{display:none;}.nav-cta{display:none;}.nav-hamburger{display:flex;}}
 #hero{background:var(--deep);padding:64px 24px 72px;position:relative;overflow:hidden;}
 .hero-dots{position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(circle,rgba(255,255,255,0.06) 1px,transparent 1px);background-size:28px 28px;}
 .hero-inner{max-width:900px;margin:0 auto;position:relative;z-index:1;text-align:center;}
@@ -233,9 +243,24 @@ footer{background:var(--deep2);padding:40px 24px 20px;border-top:2px solid rgba(
       </div>
       <div style="font-size:9px;color:rgba(255,255,255,0.4);font-weight:500;letter-spacing:0.5px;text-transform:uppercase;">Maidstone's iPhone-only specialists</div>
     </a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
     <a class="nav-cta" href="#contact">Get a Free Quote</a>
+    <div class="nav-hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
   </div>
 </nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#services" onclick="closeMenu()">Services</a>
+  <a href="#pricing" onclick="closeMenu()">Pricing</a>
+  <a href="#faq" onclick="closeMenu()">FAQ</a>
+  <a href="#contact" onclick="closeMenu()">Contact</a>
+  <a href="#contact" class="mobile-cta" onclick="closeMenu()">Get a Free Quote</a>
+</div>
 
 <section id="hero">
   <div class="hero-dots"></div>
@@ -263,10 +288,10 @@ footer{background:var(--deep2);padding:40px 24px 20px;border-top:2px solid rgba(
         </div>
       </div>
       <div style="display:flex;align-items:center;gap:12px;background:rgba(255,255,255,0.06);border-radius:12px;padding:14px 16px;">
-        <div style="font-size:22px;flex-shrink:0;">📱</div>
+        <div style="font-size:22px;flex-shrink:0;">⚡</div>
         <div>
-          <div style="font-size:12px;font-weight:700;color:white;">iPhone only</div>
-          <div style="font-size:10px;color:rgba(255,255,255,0.55);margin-top:2px;">Pure specialists. Nothing else.</div>
+          <div style="font-size:12px;font-weight:700;color:white;">Same day service</div>
+          <div style="font-size:10px;color:rgba(255,255,255,0.55);margin-top:2px;">Most repairs 30 minutes or less.</div>
         </div>
       </div>
       <div style="display:flex;align-items:center;gap:12px;background:rgba(0,201,167,0.12);border:1px solid rgba(0,201,167,0.3);border-radius:12px;padding:14px 16px;">
@@ -576,6 +601,8 @@ footer{background:var(--deep2);padding:40px 24px 20px;border-top:2px solid rgba(
 </footer>
 
 <script>
+function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open');}
+function closeMenu(){document.getElementById('mobileMenu').classList.remove('open');}
 function toggleFaq(btn){btn.classList.toggle('open');btn.nextElementSibling.classList.toggle('open');}
 function submitContact(){
   const g=id=>document.getElementById(id).value.trim();
