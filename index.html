@@ -119,7 +119,7 @@ nav{position:sticky;top:0;z-index:100;background:rgba(12,53,71,0.97);backdrop-fi
 
 /* SERVICES */
 #services{background:var(--off-white);}
-.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px;}
+.services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:44px;}
 .service-card{background:white;border:1px solid var(--border);border-radius:16px;padding:28px;transition:transform 0.25s,box-shadow 0.25s;position:relative;overflow:hidden;}
 .service-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:var(--mint);transform:scaleX(0);transform-origin:left;transition:transform 0.3s;}
 .service-card:hover{transform:translateY(-4px);box-shadow:0 12px 36px rgba(0,153,204,0.1);}
@@ -325,7 +325,7 @@ footer{background:var(--deep2);padding:48px 24px 24px;border-top:2px solid rgba(
 @media(max-width:900px){
   .why-grid{grid-template-columns:repeat(2,1fr);}
   .why-grid-4{grid-template-columns:repeat(2,1fr);}
-  .services-grid{grid-template-columns:1fr;}
+  .services-grid{grid-template-columns:repeat(2,1fr);}
   .compare-grid{grid-template-columns:1fr;}
   .footer-top{grid-template-columns:1fr 1fr;gap:24px;}
   .fb{grid-column:1/-1;}
@@ -352,6 +352,7 @@ footer{background:var(--deep2);padding:48px 24px 24px;border-top:2px solid rgba(
   .step{padding:0;}
   .step h3{color:var(--near-black);}
   #how .step h3{color:white;}
+  .services-grid{grid-template-columns:1fr;}
   .reviews-grid{grid-template-columns:1fr;}
   .areas-grid{grid-template-columns:repeat(2,1fr);}
   .about-inner{grid-template-columns:1fr;gap:32px;}
@@ -506,11 +507,19 @@ footer{background:var(--deep2);padding:48px 24px 24px;border-top:2px solid rgba(
     </div>
     <div class="service-card">
       <div class="service-emoji">🔌</div>
-      <div class="service-price">From £29</div>
+      <div class="service-price">From £50</div>
       <div class="service-name">Charging Port Repair</div>
       <div class="service-time">⏱ Around 30 minutes</div>
       <p class="service-desc">Loose connection, slow charging or not charging at all. We pull up outside your property and get you back up and running fast.</p>
-      <div class="service-cta"><a href="#contact">Get a free quote →</a></div>
+      <div class="service-cta"><a href="iphone-charging-port-repair.html">Find out more →</a> <a href="#contact" style="margin-left:12px;">Get a free quote →</a></div>
+    </div>
+    <div class="service-card">
+      <div class="service-emoji">📸</div>
+      <div class="service-price">Get a quote</div>
+      <div class="service-name">Camera Repair</div>
+      <div class="service-time">⏱ Around 30 to 45 minutes</div>
+      <p class="service-desc">Blurry photos, black camera screen, cracked lens glass or a front camera that has stopped working. Fixed in our vehicle outside your front door.</p>
+      <div class="service-cta"><a href="iphone-camera-repair.html">Find out more →</a> <a href="#contact" style="margin-left:12px;">Get a free quote →</a></div>
     </div>
   </div>
 </section>
@@ -707,7 +716,7 @@ footer{background:var(--deep2);padding:48px 24px 24px;border-top:2px solid rgba(
         <div><span>iPhone Repair</span><span>Experts</span></div>
         <p>iPhone specialists in Kent with over 8 years of experience. Fixed fast. Fixed right. No fix no fee. We come to you.</p>
       </div>
-      <div class="fc"><h4>Services</h4><a href="iphone-screen-replacement.html">Screen Replacement</a><a href="iphone-battery-replacement.html">Battery Replacement</a><a href="iphone-charging-port-repair.html">Charging Port Repair</a></div>
+      <div class="fc"><h4>Services</h4><a href="iphone-screen-replacement.html">Screen Replacement</a><a href="iphone-battery-replacement.html">Battery Replacement</a><a href="iphone-charging-port-repair.html">Charging Port Repair</a><a href="iphone-camera-repair.html">Camera Repair</a></div>
       <div class="fc"><h4>Company</h4><a href="#about">About Us</a><a href="#faq">FAQ</a><a href="#contact">Contact</a><a href="#contact">Get a Free Quote</a></div>
       <div class="fc"><h4>Contact</h4><a href="tel:07770971253">07770 971253</a><a>Folkestone, Dover, Maidstone, Canterbury</a></div>
     </div>

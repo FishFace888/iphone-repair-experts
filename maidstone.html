@@ -50,7 +50,7 @@ h1 strong{font-weight:800;color:var(--mint);display:block;}
 .sec h2{font-size:clamp(24px,4vw,38px);font-weight:700;color:var(--near-black);line-height:1.2;}
 .sec h2 span{color:var(--ocean);}
 .sec-intro{font-size:15px;color:var(--mid);line-height:1.7;margin-top:10px;max-width:640px;}
-.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px;}
+.services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:40px;}
 .service-card{background:white;border:1px solid var(--border);border-radius:16px;padding:26px;position:relative;overflow:hidden;transition:transform 0.2s,box-shadow 0.2s;}
 .service-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:var(--mint);transform:scaleX(0);transform-origin:left;transition:transform 0.3s;}
 .service-card:hover{transform:translateY(-3px);box-shadow:0 10px 32px rgba(0,153,204,0.1);}
@@ -213,7 +213,7 @@ footer{background:var(--deep2);padding:40px 24px 20px;border-top:2px solid rgba(
 .cookie-banner p{font-size:12px;color:rgba(255,255,255,0.7);line-height:1.5;flex:1;}
 .cookie-btn{background:var(--mint);color:var(--deep);font-family:'Poppins',sans-serif;font-size:12px;font-weight:700;padding:8px 20px;border-radius:50px;border:none;cursor:pointer;}
 .cookie-banner.hidden{display:none;}
-@media(max-width:900px){.why-grid{grid-template-columns:repeat(2,1fr);}.quality-inner{grid-template-columns:1fr;}.about-inner{grid-template-columns:1fr;gap:32px;}.compare-grid{grid-template-columns:1fr;}.nearby-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:900px){.why-grid{grid-template-columns:repeat(2,1fr);}.services-grid{grid-template-columns:repeat(2,1fr);}.quality-inner{grid-template-columns:1fr;}.about-inner{grid-template-columns:1fr;gap:32px;}.compare-grid{grid-template-columns:1fr;}.nearby-grid{grid-template-columns:repeat(2,1fr);}}
 @media(max-width:768px){.services-grid{grid-template-columns:1fr;}.steps{grid-template-columns:repeat(2,1fr);gap:32px;}.steps::before{display:none;}.reviews-grid{grid-template-columns:1fr;}.local-grid{grid-template-columns:repeat(2,1fr);}.frow{grid-template-columns:1fr;}.sticky-bar-text{display:none;}.ba-grid{grid-template-columns:1fr;}}
 @media(max-width:480px){.sec{padding:48px 16px;}h1{font-size:32px;}.hero-actions{flex-direction:column;align-items:center;}.btn-primary,.btn-secondary{width:100%;text-align:center;}.nearby-grid{grid-template-columns:repeat(2,1fr);}}
 </style>
@@ -345,6 +345,14 @@ footer{background:var(--deep2);padding:40px 24px 20px;border-top:2px solid rgba(
       <div class="service-time">⏱ Around 30 minutes</div>
       <p class="service-desc">Not charging or loose connection in Maidstone? We pull up outside your property, fix it in our vehicle and hand your phone back to you at the door. Fast, clean and simple.</p>
       <div class="service-cta"><a href="#contact">Get a free quote →</a></div>
+    </div>
+    <div class="service-card">
+      <div class="service-emoji">📸</div>
+      <div class="service-price">Get a quote</div>
+      <div class="service-name">Camera Repair</div>
+      <div class="service-time">⏱ Around 30 to 45 minutes</div>
+      <p class="service-desc">Blurry photos, black camera screen, cracked lens or front camera not working in Maidstone. Fixed in our vehicle outside your front door.</p>
+      <div class="service-cta"><a href="iphone-camera-repair.html">Find out more →</a> <a href="#contact" style="margin-left:12px;">Get a free quote →</a></div>
     </div>
   </div>
 </section>
@@ -569,7 +577,8 @@ footer{background:var(--deep2);padding:40px 24px 20px;border-top:2px solid rgba(
         <h4 style="font-size:11px;font-weight:700;color:white;text-transform:uppercase;letter-spacing:1px;margin-bottom:12px;">Services</h4>
         <a href="iphone-screen-replacement.html" style="display:block;font-size:12px;color:rgba(255,255,255,0.45);margin-bottom:6px;text-decoration:none;">Screen Replacement</a>
         <a href="iphone-battery-replacement.html" style="display:block;font-size:12px;color:rgba(255,255,255,0.45);margin-bottom:6px;text-decoration:none;">Battery Replacement</a>
-        <a href="#services" style="display:block;font-size:12px;color:rgba(255,255,255,0.45);margin-bottom:6px;text-decoration:none;">Charging Port Repair</a>
+        <a href="iphone-charging-port-repair.html" style="display:block;font-size:12px;color:rgba(255,255,255,0.45);margin-bottom:6px;text-decoration:none;">Charging Port Repair</a>
+        <a href="iphone-camera-repair.html" style="display:block;font-size:12px;color:rgba(255,255,255,0.45);margin-bottom:6px;text-decoration:none;">Camera Repair</a>
         <a href="#pricing" style="display:block;font-size:12px;color:rgba(255,255,255,0.45);margin-bottom:6px;text-decoration:none;">Pricing</a>
       </div>
       <div>
