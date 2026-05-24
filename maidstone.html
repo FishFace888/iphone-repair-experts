@@ -255,7 +255,7 @@ footer{background:var(--deep2);padding:40px 24px 20px;border-top:2px solid rgba(
   </div>
 </nav>
 
-<div class="mobile-menu" id="mobileMenu">
+<div class="mobile-menu" id="mobileMenu"><button onclick="closeMenu()" style="align-self:flex-end;background:none;border:none;color:white;font-size:24px;cursor:pointer;padding:0 0 8px;line-height:1;">✕</button>
   <a href="#services" onclick="closeMenu()">Services</a>
   <a href="#pricing" onclick="closeMenu()">Pricing</a>
   <a href="#areas" onclick="closeMenu()">Areas</a>
@@ -613,7 +613,7 @@ function submitContact(){
   document.getElementById('cf-success').classList.add('show');
 }
 function acceptCookies(){document.getElementById('cookieBanner').classList.add('hidden');localStorage.setItem('cookiesAccepted','true');}
-if(localStorage.getItem('cookiesAccepted')==='true'){document.getElementById('cookieBanner').classList.add('hidden');}
+if(localStorage.getItem('cookiesAccepted')==='true'){document.getElementById('cookieBanner').classList.add('hidden');}document.addEventListener('click',function(e){var m=document.getElementById('mobileMenu');var b=document.querySelector('.nav-hamburger');if(m&&m.classList.contains('open') && !m.contains(e.target) && !b.contains(e.target)){closeMenu();}});
 </script>
 </body>
 </html>
